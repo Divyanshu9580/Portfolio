@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divyanshu Sharma | Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{color:white;line-height:1.6;background: linear-gradient(120deg,#ff6a00,#ee0979,#2c3e50,#3498db,#8e44ad);background-size:600% 600%;animation:bgAnimation 15s ease infinite;}
+@keyframes bgAnimation{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 50px;background:rgba(0,0,0,0.3);backdrop-filter:blur(10px);position:sticky;top:0;z-index:1000;}
+header h1{font-size:26px;font-weight:600;}
+header .contact-icons a{margin-left:15px;color:white;font-size:20px;transition:.3s;}
+header .contact-icons a:hover{color:#00ffcc;text-shadow:0 0 10px #00ffcc;}
+
+section{padding:70px 10%;text-align:center;}
+section h2{font-size:34px;margin-bottom:20px;position:relative;display:inline-block;}
+section h2::after{content:'';display:block;width:70px;height:3px;background:#00ffcc;margin:10px auto 0;border-radius:3px;}
+
+.hero{padding:120px 10%;}
+.hero-content{display:flex;flex-direction:column;align-items:center;text-align:center;}
+.hero img{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #00ffcc;box-shadow:0 0 25px #00ffcc;margin-bottom:20px;transition:.4s;}
+.hero img:hover{transform:scale(1.05);box-shadow:0 0 40px #ff00ff;}
+.hero h2{font-size:42px;margin-bottom:15px;text-shadow:0 0 15px #00ffcc;}
+.hero p{font-size:18px;max-width:750px;margin:auto;}
+
+/* Skills Cards */
+.card-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:30px;}
+.card{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:25px;border-radius:18px;transition:.4s;box-shadow:0 6px 20px rgba(0,0,0,0.3);}
+.card i{font-size:28px;margin-bottom:10px;}
+.card:hover{transform:translateY(-10px) scale(1.03);box-shadow:0 0 20px var(--hover-color);}
+
+/* Individual card colors */
+.card.python{--hover-color:#306998;background:rgba(48,105,152,0.15);}
+.card.sql{--hover-color:#28a745;background:rgba(40,167,69,0.15);}
+.card.powerbi{--hover-color:#f2c80f;background:rgba(242,200,15,0.15);}
+.card.webdev{--hover-color:#f7941d;background:rgba(247,148,29,0.15);}
+.card.docs{--hover-color:#8e44ad;background:rgba(142,68,173,0.15);}
+
+/* Projects */
+.project-card{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:18px;padding:20px;margin:20px auto;max-width:700px;box-shadow:0 6px 20px rgba(0,0,0,0.3);transition:.3s;}
+.project-card:hover{transform:scale(1.02);box-shadow:0 0 20px #ffcc00;}
+.project-card img{width:100%;border-radius:12px;margin-top:15px;}
+
+/* Experience Timeline */
+.timeline{position:relative;max-width:900px;margin:40px auto;text-align:left;}
+.timeline::before{content:'';position:absolute;left:50%;top:0;transform:translateX(-50%);width:4px;height:100%;background:#00ffcc;}
+.timeline-item{position:relative;width:50%;padding:20px 40px;}
+.timeline-item.left{left:0;}
+.timeline-item.right{left:50%;}
+.timeline-item .content{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);padding:20px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.3);}
+.timeline-item::after{content:'';position:absolute;top:20px;width:20px;height:20px;background:#00ffcc;border-radius:50%;z-index:1;}
+.timeline-item.left::after{right:-10px;}
+.timeline-item.right::after{left:-10px;}
+
+/* Photos */
+.photos{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:30px;}
+.photos img{width:250px;height:300px;object-fit:cover;border-radius:15px;box-shadow:0 6px 15px rgba(0,0,0,0.3);transition:.3s;}
+.photos img:hover{transform:scale(1.05);box-shadow:0 0 20px #ff00ff;}
+
+footer{text-align:center;padding:20px;background:rgba(0,0,0,0.3);backdrop-filter:blur(10px);}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Divyanshu Sharma</h1>
+<div class="contact-icons">
+  <a href="divyanshusharma9580@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="tel:+919580716700"><i class="fas fa-phone"></i></a>
+  <a href="https://www.linkedin.com/in/divyanshu-sharma-83bb83313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+<div class="hero-content">
+<img src="Profile.jpeg" alt="Divyanshu Sharma">
+<h2>Hi, I'm Divyanshu Sharma 👋</h2>
+<p>I am pursuing <b>B.Tech in Computer Science (Data Science specialization)</b> and aspiring to become a <b>Data Analyst</b>. Passionate about data, dashboards, and impactful insights.</p>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<h2>My Skills</h2>
+<div class="card-container">
+  <div class="card python"><i class="fab fa-python"></i><h3>Python</h3><p>Data analysis, visualization, ML basics</p></div>
+  <div class="card sql"><i class="fas fa-database"></i><h3>SQL</h3><p>Database design & queries</p></div>
+  <div class="card powerbi"><i class="fas fa-chart-line"></i><h3>Power BI</h3><p>Interactive dashboards & reports</p></div>
+  <div class="card webdev"><i class="fas fa-code"></i><h3>Web Dev</h3><p>HTML, CSS</p></div>
+  <div class="card docs"><i class="fas fa-file-alt"></i><h3>Documentation Tools</h3><p>LaTeX, MS PowerPoint, MS Word</p></div>
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+<h2>My Projects</h2>
+<div class="project-card">
+  <h3>Social Media Engagement Analysis.</h3>
+  <p>"I'm excited to share my latest Power BI dashboard project that dives deep into social media performance across major platforms like Facebook, Instagram, LinkedIn, Twitter, and YouTube."</p>
+  <img src="Project1.png" alt="COVID-19 Dashboard Screenshot" loading="lazy">
+</div>
+<div class="project-card">
+  <h3>Sales Data analysis.</h3>
+  <p>"This interactive dashboard provides a detailed view of sales performance, showing product-wise and region-wise distribution, preferred payment methods, and key business metrics like revenue, profit, and units sold. Users can explore month-wise data to analyze trends and make data-driven decisions effectively."</p>
+  <img src="Project2.png" alt="Fraud Detection Screenshot" loading="lazy">
+</div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+<h2>Experience</h2>
+<div class="timeline">
+  <div class="timeline-item left">
+    <div class="content">
+      <h3>Python and Data Science- NIELIT</h3>
+      <p>Worked on data preprocessing, analysis, and visualization techniques.: Gained hands-on experience in Python programming, including data structures, libraries , Numpy, Pandas,Matplotlib, Scipy</p>
+    </div>
+  </div>
+  <div class="timeline-item right">
+    <div class="content">
+      <h3>Data Analytics Intern - Navodita Infotech</h3>
+      <p>Performed sales data analysis to identify key business trends and insights.Designed and developed interactive dashboard using Power BI on given data.</p>
+    </div>
+  </div>
+  <div class="timeline-item left">
+    <div class="content">
+      <h3>Data Analytics Intern - Codec Technologies</h3>
+      <p>Worked on Data analysis, and visualization techniques.Make an interactive Dashboard on Social Media Engagement Analysis by using Power Bi and
+predict right to post for gain more views.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Extra-Curricular -->
+<section id="extra">
+<h2>Extra-Curricular Activities</h2>
+<p>Served as <b>Technical Head</b> in my college. 🚀 Successfully Led 22 Technical Events at Parampara 2K25! 💡
+
+I feel incredibly proud to share that I served as the Technical Head for my college’s annual tech-fest Parampara 2K25, where I had the opportunity to lead and manage 22 diverse technical events including:
+
+🧠 Coding | 👨‍💻 Mini Hackathon | 🛠️ Circuit & Bridge Designing
+🤖 Robotics | 🧩 Rubik's Cube Challenges | 🧪 Technical Exhibitions (Junior & Senior Level)
+🕵️‍♂️ Code Debugging | ⚙️ and many more!
+
+✨ I led a dedicated team of 88 student , including event heads and co-heads, alongside my fellow technical heads:
+Divyansh Srivastava, Saumya Srivastava, and Punam Nishad.
+
+🙏 We were guided by our supportive faculty mentors:
+Dr. Vineet Rai sir, Dr. Krishna Kumar sir , and Mr. Abhraneel Sen Gupta sir , whose mentorship made this journey even more impactful.
+
+🎖️ With over ₹77,000 distributed as prize money, along with trophies, medals, and certificates, we welcomed participants from both our institute and outside colleges. Our team ensured honest, fair, and transparent conduction of each event.
+
+It was a moment of immense learning, leadership, and joy to see our hard work pay off with the grand success of the fest! 🙌</p>
+<div class="photos">
+  <img src="Tech1.jpeg" alt="Technical Head Event 1" loading="lazy">
+  <img src="Tech2.jpeg" alt="Technical Head Event 2" loading="lazy">
+</div>
+</section>
+
+<!-- My Photos -->
+<section id="photos">
+<h2>My Photos</h2>
+<div class="photos">
+  <img src="Photo1.jpeg" alt="Divyanshu Photo 1" loading="lazy">
+  <img src="Photo2.jpeg" alt="Divyanshu Photo 2" loading="lazy">
+  <img src="Photo3.jpeg" alt="Divyanshu Photo 3" loading="lazy">
+</div>
+</section>
+
+<footer>
+<p>© 2025 Divyanshu Sharma | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
